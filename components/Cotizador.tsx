@@ -67,8 +67,27 @@ export default function Cotizador() {
     }
     setIsSending(true);
     try {
-      // Simulate network request since database was removed
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      const formData = new FormData();
+      formData.append('nombre', nombre);
+      formData.append('correo', correo);
+      formData.append('whatsapp', whatsapp);
+      formData.append('tipoProyecto', tipoProyecto);
+      formData.append('gasto', gasto.toString());
+      formData.append('zona', zona);
+      formData.append('tipoPanel', tipoPanel);
+      formData.append('paneles', calc.paneles.toString());
+      formData.append('inversion', calc.inversion.toString());
+      formData.append('roi', calc.roi.toString());
+      if (recibo) {
+        formData.append('recibo', recibo);
+      }
+
+      const res = await fetch('/api/send-quote', {
+        method: 'POST',
+        body: formData,
+      });
+
+      if (!res.ok) throw new Error('Error enviando cotización');
 
       setIsSuccess(true);
       setNombre('');
@@ -82,7 +101,7 @@ export default function Cotizador() {
       }, 5000);
       
     } catch (error) {
-      setErrorMsg('Error de conexión. Por favor, verifica tu internet e intenta de nuevo.');
+      setErrorMsg('Error al enviar la cotización. Por favor, intenta de nuevo.');
     } finally {
       setIsSending(false);
     }
