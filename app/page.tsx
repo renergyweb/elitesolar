@@ -12,9 +12,6 @@ import Image from 'next/image';
 import { motion } from 'motion/react';
 
 export default function Home() {
-  const openModal = () => {
-    window.dispatchEvent(new CustomEvent('open-solar-modal'));
-  };
 
   return (
     <main className="min-h-screen bg-white text-slate-900 font-sans selection:bg-emerald-200 selection:text-emerald-900">
@@ -45,10 +42,10 @@ export default function Home() {
               </p>
               
               <div className="flex flex-col sm:flex-row items-center gap-4 mb-10">
-                <button onClick={openModal} className="w-full sm:w-auto px-6 py-3.5 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white rounded-xl font-medium text-base transition-all shadow-md shadow-emerald-500/20 flex items-center justify-center gap-2 group">
+                <a href="https://wa.me/521234567890" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-6 py-3.5 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white rounded-xl font-medium text-base transition-all shadow-md shadow-emerald-500/20 flex items-center justify-center gap-2 group">
                   Cotizar ahorro solar
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </button>
+                </a>
                 <a href="#como-funciona" className="w-full sm:w-auto px-6 py-3.5 bg-white border border-slate-200 hover:bg-slate-50 hover:border-slate-300 text-slate-700 rounded-xl font-medium text-base transition-all flex items-center justify-center shadow-sm">
                   ¿Cómo funciona?
                 </a>
@@ -74,8 +71,8 @@ export default function Home() {
               transition={{ duration: 1.2, ease: [0.77, 0, 0.175, 1], delay: 0.2 }}
             >
               <Image 
-                src="https://i.postimg.cc/2SCDnpQs/ingeniero-alite-solar.jpg" 
-                alt="Ingeniero Elite Solar" 
+                src="https://i.postimg.cc/13kmMFfR/hero-image-renergy.jpg" 
+                alt="Renergy Hero Image" 
                 fill 
                 className="object-cover"
                 priority
@@ -90,9 +87,13 @@ export default function Home() {
                 transition={{ duration: 0.6, delay: 1, type: 'spring', stiffness: 100 }}
               >
                 <div className="flex -space-x-3">
-                  {[1,2,3,4].map((i) => (
+                  {[
+                    "https://i.postimg.cc/jSzm0nMS/avatar-1.jpg",
+                    "https://i.postimg.cc/6pnJWm5k/avatar-2.jpg",
+                    "https://i.postimg.cc/BbbfJZXV/avatar-3.jpg"
+                  ].map((imgUrl, i) => (
                     <div key={i} className="w-10 h-10 rounded-full border-2 border-white bg-slate-200 overflow-hidden relative">
-                       <Image src={`https://i.postimg.cc/tT5gbJ3q/vendedora-elite-solar.jpg`} alt="Cliente" fill className="object-cover" />
+                       <Image src={imgUrl} alt="Cliente" fill className="object-cover" />
                     </div>
                   ))}
                 </div>
@@ -456,11 +457,11 @@ export default function Home() {
         <div className="max-w-3xl mx-auto px-6 text-center relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white mb-4">¿Listo para dejar de pagar luz cara?</h2>
           <p className="text-lg text-slate-400 mb-10 leading-relaxed">Habla con nuestra IA ahora mismo y descubre tu potencial de ahorro en menos de 60 segundos. Sin compromisos.</p>
-          <button onClick={openModal} className="px-8 py-4 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white rounded-xl font-medium text-lg transition-all shadow-lg shadow-emerald-500/20 flex items-center justify-center gap-2 mx-auto group border border-emerald-500/50">
+          <a href="https://wa.me/521234567890" target="_blank" rel="noopener noreferrer" className="inline-flex px-8 py-4 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white rounded-xl font-medium text-lg transition-all shadow-lg shadow-emerald-500/20 items-center justify-center gap-2 mx-auto group border border-emerald-500/50">
             <Bot className="w-5 h-5" />
             Iniciar Cotización Gratuita
             <ArrowUpRight className="w-5 h-5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-          </button>
+          </a>
         </div>
       </motion.section>
 
@@ -477,8 +478,8 @@ export default function Home() {
             <div className="flex items-center gap-2 mb-6">
               <div className="relative w-56 h-16 md:w-72 md:h-20">
                 <Image 
-                  src="https://i.postimg.cc/v8f3yJWd/logo-elite-solar-color.png" 
-                  alt="Elite Solar" 
+                  src="https://i.postimg.cc/bwFyc87p/renergy-logotipo.webp" 
+                  alt="Renergy" 
                   fill 
                   className="object-contain object-left" 
                 />

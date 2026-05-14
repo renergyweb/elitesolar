@@ -25,8 +25,8 @@ export default function Header() {
         <Link href="/" className="flex items-center group">
           <div className="relative w-56 h-16 md:w-72 md:h-20 transition-transform group-hover:scale-105">
             <Image 
-              src={isScrolled ? 'https://i.postimg.cc/GmcMqXTB/logo-elite-solar-white.png' : 'https://i.postimg.cc/v8f3yJWd/logo-elite-solar-color.png'} 
-              alt="Elite Solar" 
+              src={isScrolled ? 'https://i.postimg.cc/rpMwNQ22/renergy-logotipo-blanco.webp' : 'https://i.postimg.cc/bwFyc87p/renergy-logotipo.webp'} 
+              alt="Renergy" 
               fill 
               className="object-contain object-left" 
             />
