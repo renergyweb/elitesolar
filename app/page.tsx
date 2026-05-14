@@ -459,7 +459,7 @@ export default function Home() {
           <p className="text-lg text-slate-400 mb-10 leading-relaxed">Habla con nuestra IA ahora mismo y descubre tu potencial de ahorro en menos de 60 segundos. Sin compromisos.</p>
           <a href="https://wa.me/521234567890" target="_blank" rel="noopener noreferrer" className="inline-flex px-8 py-4 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white rounded-xl font-medium text-lg transition-all shadow-lg shadow-emerald-500/20 items-center justify-center gap-2 mx-auto group border border-emerald-500/50">
             <Bot className="w-5 h-5" />
-            Iniciar Cotización Gratuita
+            Cotizar ahora
             <ArrowUpRight className="w-5 h-5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
           </a>
         </div>

@@ -44,9 +44,9 @@ export default function Header() {
 
         {/* CTA & Mobile Toggle */}
         <div className="flex items-center gap-4">
-          <Link href="/admin" className={`hidden md:flex items-center gap-2 px-5 py-2.5 rounded-lg font-medium transition-all shadow-sm ${isScrolled ? 'bg-white text-emerald-700 hover:bg-emerald-50' : 'bg-slate-900 hover:bg-slate-800 text-white'}`}>
-            Iniciar sesión
-          </Link>
+          <a href="https://wa.me/521234567890" target="_blank" rel="noopener noreferrer" className={`hidden md:flex items-center gap-2 px-5 py-2.5 rounded-lg font-medium transition-all shadow-sm ${isScrolled ? 'bg-white text-emerald-700 hover:bg-emerald-50' : 'bg-slate-900 hover:bg-slate-800 text-white'}`}>
+            Cotizar ahora
+          </a>
           <button className={`md:hidden p-2 rounded-lg transition-colors ${isScrolled ? 'text-white hover:bg-white/20' : 'text-slate-600 hover:bg-slate-100'}`} onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -61,9 +61,9 @@ export default function Header() {
           <Link href="#como-funciona" className="p-2 hover:bg-slate-50 rounded-lg" onClick={() => setIsMobileMenuOpen(false)}>Cómo Funciona</Link>
           <Link href="#testimonios" className="p-2 hover:bg-slate-50 rounded-lg" onClick={() => setIsMobileMenuOpen(false)}>Testimonios</Link>
           <Link href="#faq" className="p-2 hover:bg-slate-50 rounded-lg" onClick={() => setIsMobileMenuOpen(false)}>FAQ</Link>
-          <Link href="/admin" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center justify-center gap-2 bg-gradient-to-r from-emerald-600 to-teal-600 text-white px-5 py-3 rounded-lg font-medium mt-2 shadow-sm">
-            Iniciar sesión
-          </Link>
+          <a href="https://wa.me/521234567890" target="_blank" rel="noopener noreferrer" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center justify-center gap-2 bg-gradient-to-r from-emerald-600 to-teal-600 text-white px-5 py-3 rounded-lg font-medium mt-2 shadow-sm">
+            Cotizar ahora
+          </a>
         </div>
       )}
     </header>
