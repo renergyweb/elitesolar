@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'Cotizador Solar IA',
   description: 'Cotizador de paneles solares en México usando Gemini AI',
   icons: {
-    icon: 'https://i.postimg.cc/KvKDD6sq/favicon-elite-solar.png',
+    icon: 'https://i.postimg.cc/bwFyc87p/renergy-logotipo.webp',
   },
 };
 
