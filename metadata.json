@@ -1,0 +1,5 @@
+{
+  "name": "Elite Solar App",
+  "description": "Aplicación para cotizar paneles solares en México usando Gemini AI",
+  "requestFramePermissions": []
+}
