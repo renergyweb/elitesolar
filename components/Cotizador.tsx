@@ -11,14 +11,15 @@ const zonas = {
 };
 
 const panelesConfig = {
-  Estándar: { watts: 450, costo: 9500 },
-  Monocristalino: { watts: 550, costo: 11500 },
+  'Jinko 635W (Casa/Negocio 220v)': { watts: 635, costo: 11500 },
+  'Jinko 555W (Casa/Negocio 110v)': { watts: 555, costo: 10500 },
+  'Jinko 730W (Industrial)': { watts: 730, costo: 13500 },
 };
 
 export default function Cotizador() {
   const [gasto, setGasto] = useState(3000);
   const [zona, setZona] = useState('Centro');
-  const [tipoPanel, setTipoPanel] = useState('Monocristalino');
+  const [tipoPanel, setTipoPanel] = useState('Jinko 635W (Casa/Negocio 220v)');
   const [tipoProyecto, setTipoProyecto] = useState('Residencial');
   const [nombre, setNombre] = useState('');
   const [whatsapp, setWhatsapp] = useState('');
@@ -196,8 +197,9 @@ export default function Cotizador() {
                       onChange={(e) => setTipoPanel(e.target.value)}
                       className="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-slate-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-all shadow-sm"
                     >
-                      <option value="Estándar">Estándar (450W)</option>
-                      <option value="Monocristalino">Monocristalino (550W)</option>
+                      <option value="Jinko 635W (Casa/Negocio 220v)">Jinko 635W (Casa/Negocio 220v)</option>
+                      <option value="Jinko 555W (Casa/Negocio 110v)">Jinko 555W (Casa/Negocio 110v)</option>
+                      <option value="Jinko 730W (Industrial)">Jinko 730W (Industrial)</option>
                     </select>
                   </div>
                 </div>
