@@ -32,7 +32,7 @@ export default function Home() {
               <div className="relative overflow-hidden inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-50 border border-emerald-100 text-emerald-700 text-xs font-semibold mb-6 shadow-sm">
                 <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/80 to-transparent w-full animate-shine z-0"></div>
                 <span className="flex h-2 w-2 rounded-full bg-emerald-500 animate-pulse relative z-10"></span>
-                <span className="relative z-10">Tarifas CFE 2024 Actualizadas</span>
+                <span className="relative z-10">Tarifas CFE 2026 Actualizadas</span>
               </div>
               <h1 className="text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 mb-6 leading-[1.1]">
                 Congela tu tarifa de luz y ahorra hasta un <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-500">95%</span>
