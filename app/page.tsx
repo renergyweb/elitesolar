@@ -106,7 +106,7 @@ export default function Home() {
                   <div className="flex items-center gap-1 text-emerald-500 mb-0.5">
                     <Star className="w-3.5 h-3.5 fill-current" /><Star className="w-3.5 h-3.5 fill-current" /><Star className="w-3.5 h-3.5 fill-current" /><Star className="w-3.5 h-3.5 fill-current" /><Star className="w-3.5 h-3.5 fill-current" />
                   </div>
-                  <p className="text-sm font-semibold text-slate-900">+1,000 familias ahorrando</p>
+                  <p className="text-sm font-semibold text-slate-900">+1,000 Proyectos Instalados</p>
                 </div>
               </motion.div>
             </motion.div>
@@ -181,7 +181,7 @@ export default function Home() {
               ¿Por qué cambiarte a energía solar hoy?
             </h2>
             <p className="text-base text-slate-600 leading-relaxed">
-              Las tarifas eléctricas suben en promedio 7% cada año. Producir tu propia energía es la inversión más segura y rentable para tu hogar.
+              Los costos de la luz suben en promedio 7% cada año. Generar tu propia energía es la inversión más segura y rentable para tu hogar.
             </p>
           </div>
           
@@ -216,7 +216,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-[24px] font-bold mb-2 text-white tracking-tight">Retorno Rápido</h3>
                 <p className="text-slate-200 text-[16px] max-w-md leading-relaxed">
-                  Recupera tu inversión en un promedio de 3 a 4 años. Después de eso, disfrutarás de energía prácticamente gratis por más de 20 años.
+                  Recupera tu inversión en un promedio de 1 a 4 años, dependiendo el giro. Después de eso, disfrutarás de energía prácticamente gratis por más de 25 años.
                 </p>
               </div>
             </motion.div>
@@ -234,7 +234,7 @@ export default function Home() {
                 <div className="w-12 h-12 bg-slate-800 border border-slate-700 text-emerald-400 rounded-xl flex items-center justify-center mb-5">
                   <Shield className="w-6 h-6" />
                 </div>
-                <h3 className="text-[24px] font-bold mb-2 text-white tracking-tight">Garantía de 25 Años</h3>
+                <h3 className="text-[24px] font-bold mb-2 text-white tracking-tight">Garantía de 25 Años en Producción</h3>
               </div>
               <p className="text-slate-400 text-[16px] leading-relaxed relative z-10">
                 Instalamos paneles Tier 1 de máxima calidad que garantizan un rendimiento óptimo durante décadas, respaldados por garantías reales.
@@ -304,7 +304,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <h2 className="text-3xl font-bold tracking-tight text-slate-900 mb-4">Un proceso simple y sin fricciones</h2>
-            <p className="text-base text-slate-600">Nosotros nos encargamos de todo el papeleo y la instalación pesada. Tú solo disfruta del ahorro.</p>
+            <p className="text-base text-slate-600">Nosotros nos encargamos de todo el papeleo y documentación, así como la instalación completa. Tú solo disfruta del ahorro.</p>
           </div>
 
           <motion.div 
@@ -329,7 +329,7 @@ export default function Home() {
               <div className="w-16 h-16 bg-emerald-50 border border-emerald-100 rounded-xl flex items-center justify-center mb-6 shadow-sm">
                 <Bot className="w-8 h-8 text-emerald-600" />
               </div>
-              <h3 className="text-lg font-bold mb-2 text-slate-900">1. Cotiza con IA</h3>
+              <h3 className="text-lg font-bold mb-2 text-slate-900">1. Cotiza con nuestra IA Solar</h3>
               <p className="text-sm text-slate-600 leading-relaxed">Chatea con nuestra asesora virtual, dale el monto de tu recibo y obtén un cálculo exacto en segundos.</p>
             </motion.div>
 
@@ -343,8 +343,8 @@ export default function Home() {
               <div className="w-16 h-16 bg-emerald-50 border border-emerald-100 rounded-xl flex items-center justify-center mb-6 shadow-sm">
                 <Wrench className="w-8 h-8 text-emerald-600" />
               </div>
-              <h3 className="text-lg font-bold mb-2 text-slate-900">2. Instalación Experta</h3>
-              <p className="text-sm text-slate-600 leading-relaxed">Nuestros ingenieros certificados instalan tu sistema en 1 o 2 días, sin ensuciar ni dañar tu propiedad.</p>
+              <h3 className="text-lg font-bold mb-2 text-slate-900">2. Instalación Profesional</h3>
+              <p className="text-sm text-slate-600 leading-relaxed">Nuestros ingenieros certificados instalan tu sistema en 1 día máximo, sin dañar tu propiedad.</p>
             </motion.div>
 
             <motion.div 
@@ -357,7 +357,7 @@ export default function Home() {
               <div className="w-16 h-16 bg-emerald-50 border border-emerald-100 rounded-xl flex items-center justify-center mb-6 shadow-sm">
                 <Zap className="w-8 h-8 text-emerald-600" />
               </div>
-              <h3 className="text-lg font-bold mb-2 text-slate-900">3. Enciende el Ahorro</h3>
+              <h3 className="text-lg font-bold mb-2 text-slate-900">3. Empieza el Ahorro</h3>
               <p className="text-sm text-slate-600 leading-relaxed">Gestionamos el medidor bidireccional con CFE. A partir de ese momento, tu recibo llegará en el mínimo.</p>
             </motion.div>
           </motion.div>
@@ -388,9 +388,10 @@ export default function Home() {
               {/* First Half */}
               <div className="flex gap-6 pr-6">
                 {[
-                  { name: "Carlos M.", location: "Monterrey, NL", text: "Pagaba $4,500 de luz cada bimestre por los minisplits. Con Elite Solar ahora me llegan $54 pesos. La mejor inversión que he hecho para mi casa.", savings: "$4,446" },
-                  { name: "Ana P.", location: "Mérida, YUC", text: "Tenía miedo del trámite con CFE pero ellos se encargaron de absolutamente todo. La instalación fue súper limpia y rápida. 100% recomendados.", savings: "$3,200" },
-                  { name: "Roberto G.", location: "Guadalajara, JAL", text: "Coticé con 3 empresas diferentes y la atención de Elite Solar fue superior desde el día 1. El cálculo que me dio la IA fue exacto a lo que instalaron.", savings: "$5,800" }
+                  { name: "Carlos M.", location: "Guadalajara, Jalisco", text: "Pagaba $4,500 de luz cada bimestre por los minisplits. Con Renergy México ahora me llegan $64 pesos. La mejor inversión que he hecho para mi casa.", savings: "$4,446" },
+                  { name: "Ana P.", location: "Puerto Vallarta, Jalisco", text: "Tenía miedo del trámite con CFE pero ellos se encargaron de absolutamente todo. La instalación fue súper limpia y rápida. 100% recomendados.", savings: "$3,200" },
+                  { name: "Roberto G.", location: "Manzanillo, Colima", text: "Coticé con 3 empresas diferentes y la atención de Renergy México fue superior desde el día 1. El cálculo que me dio la IA fue exacto a lo que instalaron.", savings: "$5,800" }
+                  { name: "Sergio P.", location: "Zapopan, Jalisco", text: "Los he contratado para mis 2 bodegas y 2 casas que tengo y no he tenido problemas, sigo con mis ahorros desde hace más de 6 años", savings: "$2,500" }
                 ].map((testimonial, i) => (
                   <div key={i} className="w-[350px] md:w-[400px] shrink-0 bg-white p-8 rounded-2xl shadow-sm border border-slate-200 relative flex flex-col justify-between hover:-translate-y-2 hover:shadow-xl hover:shadow-emerald-500/10 hover:border-emerald-200 transition-all duration-300 group">
                     <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-emerald-50 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -406,7 +407,7 @@ export default function Home() {
                         <p className="text-xs text-slate-500">{testimonial.location}</p>
                       </div>
                       <div className="text-right">
-                        <p className="text-[10px] text-slate-500 uppercase font-bold tracking-wider">Ahorro Bimestral</p>
+                        <p className="text-[10px] text-slate-500 uppercase font-bold tracking-wider">Ahorro Mensual o Bimestral</p>
                         <p className="font-bold text-emerald-600 text-sm group-hover:scale-110 origin-right transition-transform duration-300">{testimonial.savings}</p>
                       </div>
                     </div>
@@ -416,9 +417,10 @@ export default function Home() {
               {/* Second Half */}
               <div className="flex gap-6 pr-6">
                 {[
-                  { name: "Carlos M.", location: "Monterrey, NL", text: "Pagaba $4,500 de luz cada bimestre por los minisplits. Con Elite Solar ahora me llegan $54 pesos. La mejor inversión que he hecho para mi casa.", savings: "$4,446" },
-                  { name: "Ana P.", location: "Mérida, YUC", text: "Tenía miedo del trámite con CFE pero ellos se encargaron de absolutamente todo. La instalación fue súper limpia y rápida. 100% recomendados.", savings: "$3,200" },
-                  { name: "Roberto G.", location: "Guadalajara, JAL", text: "Coticé con 3 empresas diferentes y la atención de Elite Solar fue superior desde el día 1. El cálculo que me dio la IA fue exacto a lo que instalaron.", savings: "$5,800" }
+                  { name: "Carlos M.", location: "Guadalajara, Jalisco", text: "Pagaba $4,500 de luz cada bimestre por los minisplits. Con Renergy México ahora me llegan $64 pesos. La mejor inversión que he hecho para mi casa.", savings: "$4,446" },
+                  { name: "Ana P.", location: "Puerto Vallarta, Jalisco", text: "Tenía miedo del trámite con CFE pero ellos se encargaron de absolutamente todo. La instalación fue súper limpia y rápida. 100% recomendados.", savings: "$3,200" },
+                  { name: "Roberto G.", location: "Manzanillo, Colima", text: "Coticé con 3 empresas diferentes y la atención de Renergy México fue superior desde el día 1. El cálculo que me dio la IA fue exacto a lo que instalaron.", savings: "$5,800" }
+                  { name: "Sergio P.", location: "Zapopan, Jalisco", text: "Los he contratado para mis 2 bodegas y 2 casas que tengo y no he tenido problemas, sigo con mis ahorros desde hace más de 6 años", savings: "$2,500" }
                 ].map((testimonial, i) => (
                   <div key={i} className="w-[350px] md:w-[400px] shrink-0 bg-white p-8 rounded-2xl shadow-sm border border-slate-200 relative flex flex-col justify-between hover:-translate-y-2 hover:shadow-xl hover:shadow-emerald-500/10 hover:border-emerald-200 transition-all duration-300 group">
                     <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-emerald-50 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -504,14 +506,14 @@ export default function Home() {
           <div>
             <h4 className="text-slate-900 font-semibold mb-4 text-sm">Contacto</h4>
             <ul className="space-y-3 text-sm">
-              <li>hola@elitesolar.mx</li>
-              <li>800 123 4567</li>
-              <li>Monterrey, Nuevo León, México</li>
+              <li>contacto@renergymexico.com</li>
+              <li>(33) 2712 2721</li>
+              <li>Guadalajara, Jalisco, México</li>
             </ul>
           </div>
         </div>
         <div className="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-slate-100 text-xs text-center md:text-left flex flex-col md:flex-row justify-between items-center text-slate-500">
-          <p>© {new Date().getFullYear()} Elite Solar. Todos los derechos reservados.</p>
+          <p>© {new Date().getFullYear()} Renergy México. Todos los derechos reservados.</p>
           <div className="flex gap-4 mt-4 md:mt-0">
             <a href="#" className="hover:text-slate-900 transition-colors">Aviso de Privacidad</a>
             <a href="#" className="hover:text-slate-900 transition-colors">Términos y Condiciones</a>
