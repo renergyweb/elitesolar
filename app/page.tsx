@@ -54,12 +54,17 @@ export default function Home() {
               <div className="flex items-center gap-6 text-sm font-medium text-slate-500">
                 <div className="flex items-center gap-2">
                   <CheckCircle className="w-4 h-4 text-emerald-500" />
-                  <span>Sin enganche</span>
+                  <span>Solo las mejores marcas</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle className="w-4 h-4 text-emerald-500" />
+                  <span>Sin anticipos</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle className="w-4 h-4 text-emerald-500" />
                   <span>Trámite CFE incluido</span>
                 </div>
+        
               </div>
             </motion.div>
 
