@@ -45,7 +45,7 @@ export default function Header() {
         {/* CTA & Mobile Toggle */}
         <div className="flex items-center gap-4">
           <a href="https://wa.me/521234567890" target="_blank" rel="noopener noreferrer" className={`hidden md:flex items-center gap-2 px-5 py-2.5 rounded-lg font-medium transition-all shadow-sm ${isScrolled ? 'bg-white text-emerald-700 hover:bg-emerald-50' : 'bg-slate-900 hover:bg-slate-800 text-white'}`}>
-            Cotizar ahora
+            Cotizar 
           </a>
           <button className={`md:hidden p-2 rounded-lg transition-colors ${isScrolled ? 'text-white hover:bg-white/20' : 'text-slate-600 hover:bg-slate-100'}`} onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
