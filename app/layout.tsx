@@ -8,7 +8,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Cotizador Solar IA',
+  title: 'Renergy México',
   description: 'Cotizador de paneles solares en México usando Gemini AI',
   icons: {
     icon: 'https://i.postimg.cc/bwFyc87p/renergy-logotipo.webp',
