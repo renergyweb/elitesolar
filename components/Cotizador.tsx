@@ -11,9 +11,9 @@ const zonas = {
 };
 
 const panelesConfig = {
-  'Jinko 635W (Casa/Negocio 220v)': { watts: 635, costo: 11500 },
-  'Jinko 555W (Casa/Negocio 110v)': { watts: 555, costo: 10500 },
-  'Jinko 730W (Industrial)': { watts: 730, costo: 13500 },
+  'Jinko 635W (Casa/Negocio 220v)': { watts: 635, costo: 8500 },
+  'Jinko 555W (Casa/Negocio 110v)': { watts: 555, costo: 9000 },
+  'Jinko 730W (Industrial)': { watts: 730, costo: 8500 },
 };
 
 export default function Cotizador() {
@@ -305,7 +305,7 @@ export default function Cotizador() {
                           required
                           value={whatsapp}
                           onChange={(e) => setWhatsapp(e.target.value)}
-                          placeholder="Ej. 55 1234 5678"
+                          placeholder="Ej. 33 1234 5678"
                           className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-white transition-all"
                           data-lpignore="true"
                         />
