@@ -18,7 +18,7 @@ const services = [
     icon: Building,
     title: 'Comercial e Industrial',
     description: 'Soluciones de alta capacidad para empresas. Reduce tus costos operativos drásticamente y mejora la rentabilidad y sustentabilidad de tu negocio.',
-    features: ['Deducibilidad fiscal del 100%', 'Estudio de calidad de energía', 'Retorno de inversión en 2-4 años'],
+    features: ['Deducibilidad fiscal del 100%', 'Estudio de calidad de energía', 'Retorno de inversión en 1-4 años'],
     gradient: 'from-emerald-600 to-teal-600',
     iconColor: 'text-emerald-600',
     bgColor: 'bg-emerald-50',
