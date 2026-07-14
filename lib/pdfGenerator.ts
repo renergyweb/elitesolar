@@ -39,7 +39,7 @@ export async function generateQuotePDF(prospect: any, calc: SolarCalculationResu
   pdf.setTextColor(255, 255, 255);
   pdf.setFontSize(24);
   pdf.setFont("helvetica", "bold");
-  pdf.text("ELITE SOLAR", 20, 25);
+  pdf.text("RENERGY MEXICO", 20, 25);
   
   pdf.setFontSize(12);
   pdf.setFont("helvetica", "normal");
@@ -120,7 +120,7 @@ export async function generateQuotePDF(prospect: any, calc: SolarCalculationResu
   pdf.setTextColor(...grayColor);
   pdf.setFontSize(10);
   pdf.setFont("helvetica", "normal");
-  pdf.text("Elite Solar - Transformando la energía de México", 105, 280, { align: "center" });
+  pdf.text("Renergy México - Transformando la energía de México", 105, 280, { align: "center" });
   pdf.text("Esta es una cotización estimada y está sujeta a una visita técnica.", 105, 285, { align: "center" });
   
   return pdf.output('blob');
