@@ -6,7 +6,7 @@ import { motion } from 'motion/react';
 const faqs = [
   {
     question: "¿Cuánto tiempo tardo en recuperar mi inversión?",
-    answer: "En promedio, nuestros clientes recuperan su inversión entre 3 y 4 años gracias a los ahorros de hasta 95% en su recibo de CFE. A partir de ahí, la energía es prácticamente gratis por los siguientes 20+ años."
+    answer: "En promedio, nuestros clientes recuperan su inversión entre 1 y 4 años, dependiendo si es casa o negocio gracias a los ahorros de hasta 95% en su recibo de CFE. A partir de ahí, la energía es prácticamente gratis por los siguientes 25+ años."
   },
   {
     question: "¿Qué pasa si está nublado o llueve?",
