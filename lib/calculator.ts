@@ -47,7 +47,7 @@ export function calculateSolarSystem(
 
   // 4. Calcula inversionTotal sumando el costo de los paneles más un 20% de gastos de instalación.
   const costoPaneles = numeroPaneles * panelPrice;
-  const inversionTotal = costoPaneles * 1.20; // +20% de instalación
+  const inversionTotal = costoPaneles * 1; // +20% de instalación
 
   // 5. Calcula añosRetorno dividiendo la inversionTotal entre el ahorro anual estimado.
   // El ahorro anual es el gasto bimestral multiplicado por los 6 bimestres del año.
